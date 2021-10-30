@@ -51,6 +51,8 @@ namespace PinGolf
         }
         public void RestartGame()
         {
+            Counter._score = 0;
+            Counter.startTime = 61;
             SceneManager.LoadScene(0);
         }
         public void Lose()
