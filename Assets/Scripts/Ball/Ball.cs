@@ -20,10 +20,6 @@ namespace PinGolf
             BallSpeed();
         }
 
-        void OnGUI()
-        {
-            GUI.Label(new Rect(20, 20, 200, 200), "rigidbody velocity: " + rigidbody.velocity);
-        }
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Flag"))
